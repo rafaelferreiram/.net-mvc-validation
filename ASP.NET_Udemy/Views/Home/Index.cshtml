@@ -1,0 +1,28 @@
+﻿@model ASP.NET_Udemy.Models.Pessoa
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>MEEEEEEEEEEEEEEEEEEEEEEEEU DEUS DO CÉU</h2>
+<p>O que ta acontecendo ?</p>
+
+<br />
+
+@using (Html.BeginForm("Lista", "Home", FormMethod.Post))
+{
+    <fieldset>
+        <legend>Dados</legend>
+
+        @Html.LabelFor(x =>x.pessoaId)
+        <input value="@Model.pessoaId" name="pessoaId" type="number"/>
+
+         @Html.LabelFor(x =>x.nome)
+        <input value="@Model.nome" name="nome" type="text"/>
+
+         @Html.LabelFor(x =>x.tipo)
+        <input value="@Model.tipo" name="tipo" type="text"/>
+        <br />
+        <input type="submit" />
+    </fieldset>
+}

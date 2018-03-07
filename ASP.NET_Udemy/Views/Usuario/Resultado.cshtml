@@ -1,0 +1,73 @@
+﻿@model ASP.NET_Udemy.Models.Usuario
+
+@{
+    ViewBag.Title = "Resultado Usuarios";
+}
+
+<h2>Listar dados Ususrios</h2>
+<br />
+<fieldset>
+    <legend>Dados do Usuario Cadastrado</legend>
+    <div class="editor-label">
+       <b>@Html.DisplayNameFor(model => model.Nome)</b> 
+    </div>
+
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="editor-label">
+       <b>@Html.DisplayNameFor(model => model.Observacoes)</b> 
+    </div>
+
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Observacoes)
+    </div>
+
+    <div class="editor-label">
+        <b>@Html.DisplayNameFor(model => model.Idade)</b>
+    </div>
+
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Idade)
+    </div>
+
+    <div class="editor-label">
+      <b>@Html.DisplayNameFor(model => model.Email)</b>  
+    </div>
+
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <div class="editor-label">
+       <b>@Html.DisplayNameFor(model => model.Login)</b>
+    </div>
+
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Login)
+    </div>
+
+    <div class="editor-label">
+       <b> @Html.DisplayNameFor(model => model.Senha)</b>
+    </div>
+
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Senha)
+    </div>
+
+    <div class="editor-label">
+      <b>  @Html.DisplayNameFor(model => model.ConfirmaraSenha)</b>
+    </div>
+
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.ConfirmaraSenha)
+    </div>
+
+    <p>@Html.ActionLink("Voltar", "Usuario")</p>
+
+
+
+
+</fieldset>
+
